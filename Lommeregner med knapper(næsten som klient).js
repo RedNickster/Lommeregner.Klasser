@@ -1,7 +1,4 @@
-// Lav en lommeregner der ligner en normal lommeregner ved at bruge metoden vist af Rigo
-
-// send parameter ned til TilføgTegn når man klikker på (x)klnap
-
+// Lav en lommeregner der ligner en normal lommeregner
 
 //setup funtion til at sætte canvas op
 function setup() {
@@ -138,18 +135,18 @@ function setup() {
         let operator = inputList.operators[i]; // Hent operatoren
         let num = inputList.numbers[i + 1]; // Hent det næste tal
   
-        if (operator === '+') {
-          result += num; // Addition
-        } else if (operator === '-') {
-          result -= num; // Subtraktion
-        } else if (operator === '*') {
-            result *= num; // Multiplikation
-        } else if (operator === '/') {
+        if (operator === '*') {
+          result *= num; // Multiplikation
+        }else if (operator === '/') {
           if (num === 0) {
             throw new Error('Division by zero is not allowed');
           }
-          result /= num;
-        } else {
+          result /= num; // Division
+        } else if (operator === '+') {
+          result += num; // Addition
+        } else if (operator === '-') {
+            result -= num; // Subtraktion
+        }  else {
           throw new Error(`Invalid operator: ${operator}`);
         }   
       }
@@ -160,9 +157,6 @@ function setup() {
   class Display {
     showResult(result, _input) {
       _input.value(result); // Set the value of the input field to the resultbackground(200); 
-      /*background(200); // Opdater baggrundsfarven
-      textSize(18); // Indstil tekststørrelsen for resultatet
-      text(`Resultat: ${result}`, 30, 300); // Vis resultatet på skærmen*/
     }
   }
   

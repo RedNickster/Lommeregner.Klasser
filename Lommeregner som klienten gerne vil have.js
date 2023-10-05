@@ -2,6 +2,18 @@
 
 // send parameter ned til TilføgTegn når man klikker på (x)klnap
 
+// ER IKKE FÆRDIG!!
+// ER IKKE FÆRDIG!!
+// ER IKKE FÆRDIG!!
+// ER IKKE FÆRDIG!!
+// ER IKKE FÆRDIG!!
+// ER IKKE FÆRDIG!!
+
+
+
+
+
+
 
 //setup funtion til at sætte canvas op
 function setup() {
@@ -16,7 +28,7 @@ function setup() {
       this.CPU = new CPU(); // Opret instans af CPU-klassen
       this.Display = new Display(); // Opret instans af Display-klassen
   
-      this._input = createInput("23+82*23/42"); // Opret inputfelt
+      this._input = createInput("IKKE FÆRDIG !!!"); // Opret inputfelt
         this._input.position(60, 60); // Opdateret position for inputfeltet
         this._input.size(180, 30); // Opdateret størrelse for inputfeltet
       this.start = createButton(" = "); // Opret knap
