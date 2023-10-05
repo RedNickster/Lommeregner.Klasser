@@ -91,7 +91,7 @@ function setup() {
         operators: [], 
         numbers: [], 
       };
-      let elements = inputString.split(/([\+\-\*\/])/); // Split strengen ved hjælp af regulære udtryk
+      let elements = inputString.split(/([\+\-\*\/])/); // Split inputstrengen ved hjælp af regulære udtryk
       let currentNumber = ""; // Tom streng til at holde det nuværende tal
   
       for (let i = 0; i < elements.length; i++) {
